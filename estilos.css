@@ -1,0 +1,42 @@
+/* 13, 10, 105 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cajanav{
+    height: 5em;
+    width: 100%;
+    background-color: rgb(13, 10, 105)
+}
+
+.tamanologo{
+    height: 5em;
+    margin-left: 50px;
+    margin-right: 700px;
+}
+
+.seccionesdelnav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10em;
+    gap: 50px;
+}
+
+.elementonav{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;;
+    
+}
+
+.elementonav:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
