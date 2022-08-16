@@ -1,4 +1,7 @@
-/* 13, 10, 105 */
+
+:root{
+    --bg-color: rgb(13, 10, 105);
+}
 
 *{
     margin: 0;
@@ -6,16 +9,19 @@
     box-sizing: border-box;
 }
 
-.cajanav{
+
+.header{
     height: 5em;
     width: 100%;
-    background-color: rgb(13, 10, 105)
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tamanologo{
     height: 5em;
-    margin-left: 50px;
-    margin-right: 700px;
+    padding-left: 150px;
 }
 
 .seccionesdelnav{
@@ -26,13 +32,19 @@
     gap: 50px;
 }
 
+.seccionesdelnav a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 .elementonav{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: flex;
     margin-top: 5px;
     padding-bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -40,3 +52,4 @@
     border-bottom: 1px solid white;
     cursor: pointer;
 }
+
