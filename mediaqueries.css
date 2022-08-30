@@ -1,0 +1,103 @@
+
+@media (max-width: 992px) {
+   
+    .seccionesdelnav{
+       background: black;
+       width: 100%;
+       height: calc(100vh - 5em);
+       position: absolute;
+       top: 5em;
+       left: 0;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       transform: translateX(200%);
+       transition: all 0.4s ease-out;
+    }
+
+    nav i{
+        display: block;
+        color: white;
+        padding-right: 20px;
+    }
+
+    #toggle-menu:checked + .seccionesdelnav{
+        transform: translateX(0);
+        transition: all 0.4s ease-in;
+    }
+
+    .tamanologo{
+        padding-left: 50px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        margin: 160px 0 0 40px
+    }
+
+    .hero-contenido{
+        padding: unset;
+        margin: unset;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-imagen{
+        margin-left: 180px;
+        margin-top: 120px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-titulos{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .hero-imagen{
+        height: 360px;
+        width: 360px;
+    }
+
+    .descripcion p{
+        max-width: 600px;
+        font-size: 16px;
+    }
+
+    .cards-info{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-titulos{
+        font-size: 30px;
+    }
+
+    .hero-imagen{
+        height: 300px;
+        width: 300px;
+        margin-left: 140px;
+    }
+
+    .descripcion p{
+        max-width: 400px;
+    }
+
+    .cards-info img{
+        height: 160px;
+        width: 160px;
+    }
+
+    .contacto-imagen{
+        height: 200px;
+        width: 200px;
+    }
+}

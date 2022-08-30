@@ -30,6 +30,19 @@ body{
     padding-left: 150px;
 }
 
+nav{
+    display: flex;
+}
+
+nav i{
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
 .seccionesdelnav{
     display: flex;
     align-items: center;
@@ -136,6 +149,7 @@ background: linear-gradient(to top, rgb(41, 233, 41), rgb(57, 247, 57));
     width: 400px;
     border-radius: 100%;
     border: 10px solid rgb(5, 185, 20);
+    
 }
 
 .descripcion{
@@ -154,4 +168,102 @@ background: linear-gradient(to top, rgb(41, 233, 41), rgb(57, 247, 57));
     font-size: 20px;
     color: rgb(255, 255, 255);
 
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    gap: 100px;
+    padding-bottom: 280px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.cards h2{
+    background: rgb(9,198,85);
+background: linear-gradient(90deg, rgba(9,198,85,1) 0%, rgba(49,213,19,1) 29%, rgba(216,227,24,1) 34%, rgba(205,189,31,1) 68%, rgba(222,39,15,1) 69%);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.cards-info{
+    display: flex;
+    gap: 150px;
+    text-align: center;
+}
+
+.cards-info img{
+    mix-blend-mode:color-burn;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.cards-info h3{
+    color: rgb(255, 255, 0);
+}
+
+.cards-info-1 h3{
+    color: rgb(0, 128, 0);
+} 
+
+.cards-info-3 h3{
+    color: rgb(255, 0, 0);
+}
+
+.contacto{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.contacto-imagen{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    border: 10px solid rgb(0, 0, 0);
+    animation: contacto-imagen 5s infinite;
+    
+
+}
+
+@keyframes contacto-imagen{
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.contacto-items{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contacto-items div{
+    display: flex;
+    gap: 10px;
+}
+
+footer div{
+    background: rgb(0, 0, 0);
+    height: 230px;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5{
+    color: rgb(255, 255, 255);
 }

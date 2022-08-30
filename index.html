@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="./mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -29,6 +31,8 @@
         class="tamanologo"
       />
       <nav class="cajanav">
+        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu">
         <ul class="seccionesdelnav">
           <li>
             <img
@@ -79,8 +83,8 @@
               resto me encargo yo 😀.
             </p>
             <div class="hero-btn">
-              <button>VER PROYECTOS</button>
-              <button>CONTACTO</button>
+              <a href="#"><button>VER PROYECTOS</button></a>
+              <a href="#"><button>CONTACTO</button></a>
             </div>
           </div>
           <div>
@@ -102,7 +106,48 @@
             </p>
           </div>
         </section>
+        <section class="cards">
+            <h2>APTITUDES PERSONALES</h2>
+            <div class="cards-info">
+              <div class="cards-info-1">
+                <img src="./assets/reloj.gif" alt="reloj" title="reloj">
+                <h3>Responsabilidad</h3>
+              </div>
+              <div class="cards-info-2">
+                <img src="./assets/pulso.gif" alt="apretón de manos" title="apretón de manos">
+                <h3>Trabajo en equipo</h3>
+              </div>
+              <div class="cards-info-3">
+                <img src="./assets/paleta-de-pintura.gif" alt="paleta de pintura" title="paleta de pintura">
+                <h3>Creatividad</h3>
+              </div>
+            </div>
+        </section>
+        <section class="contacto">
+          <div class="contacto-items">
+            <h2>Contacto</h2>
+            <div>
+              <img src="./assets/mail.svg" alt="icono correo" title="icono correo">
+              <h4>ezequielzabala400@gmail.com</h4>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/hector-ezequiel-zabala/" target="_blank"><img src="./assets/linkedin.svg" alt="icono linkedin" title="icono linkedin"></a>
+              <h4>Hector Ezequiel Zabala</h4>
+            </div>
+           <div>
+            <a href="https://www.instagram.com/ezequielzabala33/?hl=es-la" target="_blank"><img src="./assets/instagram.svg" alt="icono instagram" title="icono instagram"></a>
+            <h4>ezequielzabala33</h4>
+           </div>
+          </div>
+          <img src="./assets/contacto.jpg" alt="imagen de contactos" title="imagen de contactos" class="contacto-imagen">
+        </section>
       </article>
+      <footer>
+        <div>
+          <img src="./assets/logo.png" alt="Logo" title="Logo">
+          <h5>👋 SALUDOS 👋</h5>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
