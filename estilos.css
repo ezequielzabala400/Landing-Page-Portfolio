@@ -61,9 +61,9 @@ nav i{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: flex;
-    margin-top: 5px;
-    padding-bottom: 5px;
+    align-items: center;
     font-family: 'Ubuntu', sans-serif;
+    gap: 20px;
     
 }
 
@@ -74,19 +74,25 @@ nav i{
     transition: 0.4s;
 }
 
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 120PX;
+    margin-top: 180PX;
+    gap: 160px;
 }
 
 .hero-contenido{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 120px 0 0 300px;
     gap: 120px;
 }
 
@@ -144,7 +150,6 @@ background: linear-gradient(to top, rgb(41, 233, 41), rgb(57, 247, 57));
 }
 
 .hero-imagen{
-    margin: 60px 150px 0 0;
     height: 400px;
     width: 400px;
     border-radius: 100%;
@@ -161,6 +166,7 @@ background: linear-gradient(to top, rgb(41, 233, 41), rgb(57, 247, 57));
     margin-bottom: 100px;
     border-top: 1px solid rgb(255, 255, 255);
     border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
 }
 
 .descripcion p{
@@ -179,6 +185,7 @@ background: linear-gradient(to top, rgb(41, 233, 41), rgb(57, 247, 57));
     gap: 100px;
     padding-bottom: 280px;
     border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
 }
 
 .cards h2{
